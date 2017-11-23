@@ -44,7 +44,7 @@ dL = L./N;
 mi=30;              % relative magnetic permeability of material
 mi0=4.*pi.*1e-7;    % magnetic constant
 
-Hext0=1;
+Hext0=1;            % (A/m) external magnetiing field in the direction of rod's axis
 
 
 a = zeros(N,N);                   % matrix for a coefficents
