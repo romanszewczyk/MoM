@@ -80,9 +80,9 @@ B2=ones(size(x_g)).*Hext0.*mi0;       % interpolation of results
 
 Bi=interp1(x_t,Bt,x_g,'nearest','extrap');
 
-plot(x_t,Bt,'ok',"linewidth",1,"markersize", 7, x_g,Bi,'r',"linewidth",2,x_g,B1,'k',"linewidth",2,x_g,B2,'k',"linewidth",2);
-set(gca, "fontsize", 12);
-xlabel('x (m)',"fontweight", "bold");
-ylabel('B(T)',"fontweight", "bold");
+plot(x_t,Bt,'ok','linewidth',1,'markersize', 7, x_g,Bi,'r','linewidth',2,x_g,B1,'k','linewidth',2,x_g,B2,'k','linewidth',2);
+set(gca, 'fontsize', 12);
+xlabel('x (m)','fontweight', 'bold');
+ylabel('B(T)','fontweight', 'bold');
 grid;
 
