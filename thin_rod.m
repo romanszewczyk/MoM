@@ -78,9 +78,9 @@ B2=ones(size(x_g)).*Hext0.*mi0;
 
 Bi=interp1(x_t,B,x_g,'nearest','extrap');
 
-plot(x_t,B,'or',"linewidth",2,x_g,Bi,'r',"linewidth",2,x_g,B1,'k',"linewidth",2,x_g,B2,'k',"linewidth",2);
-set(gca, "fontsize", 12);
-xlabel('x (m)',"fontweight", "bold");
-ylabel('B(T)',"fontweight", "bold");
+plot(x_t,B,'or','linewidth',2,x_g,Bi,'r','linewidth',2,x_g,B1,'k','linewidth',2,x_g,B2,'k','linewidth',2);
+set(gca, 'fontsize', 12);
+xlabel('x (m)','fontweight', 'bold');
+ylabel('B(T)','fontweight', 'bold');
 grid;
 
