@@ -33,6 +33,13 @@
 %
 
 
+t=ver;
+if strcmp(t(1).Name,'Octave')==0
+   page_screen_output(0);
+   page_output_immediately(1);
+end                 % if Octave, than configure screen for Octave
+
+
 L=0.2;              % (m) the length of thin rod
 
 s=pi.*(0.002).^2;   % (m^2) rod's crossection
