@@ -32,6 +32,14 @@
 %              and its implementation in Octave/Matlab".
 %
 
+t=ver;
+if strcmp(t(1).Name,'Octave')==0
+   page_screen_output(0);
+   page_output_immediately(1);
+end                 % if Octave, than configure screen for Octave
+
+
+
 L=0.25;             % (m) the length of cylindrical rod
 
 R=0.0022;           % (m) rod's radius
