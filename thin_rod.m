@@ -34,7 +34,7 @@
 
 
 t=ver;
-if strcmp(t(1).Name,'Octave')==0
+if strcmp(t(1).Name,'Octave')==1
    page_screen_output(0);
    page_output_immediately(1);
 end                 % if Octave, than configure screen for Octave
