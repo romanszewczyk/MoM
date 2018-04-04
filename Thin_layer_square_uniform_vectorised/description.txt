@@ -1,0 +1,2 @@
+
+Vectorized form of the model of magnetostatic field distribution in the thin layer. 
