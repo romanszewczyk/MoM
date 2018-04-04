@@ -1,0 +1,2 @@
+
+Script for the rod with any shape.
