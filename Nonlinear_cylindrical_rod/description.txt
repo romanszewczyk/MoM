@@ -1,0 +1,3 @@
+
+Magnetostatic model of thin layer with uniform grid considering the nonlinear characterisitc of magnrtic material (Jiles-Atherton model).
+
