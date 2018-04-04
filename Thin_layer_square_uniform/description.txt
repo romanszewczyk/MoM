@@ -1,0 +1,2 @@
+
+Script for magnetostatic modelling the thin layer with uniform rectangular mesh
