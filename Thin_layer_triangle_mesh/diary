@@ -1,0 +1,24 @@
+*** Magnetostatic calculations for thin layer described by the 2D adaptive mesh ***
+
+Loading mesh from directory: romb_02/...done.
+nodes: 53, triangles: 84, external border lines: 20 
+
+Calculations for triangles...done.
+Create table of borders... Found: 136 borders. Done.
+
+
+ Initialization... Nx = 20 , Nx = 21 , dL = 7.73e-002 ok. 
+
+ 2018-04-19 10:13:42 ok.
+
+ 2018-04-19 10:13:42 Generation of matrixes for linear equations and external magnetizing field. 
+                     Number of points to generate: 705600 ...
+ C matrixes loaded
+ 2018-04-19 10:15:40 ok.
+
+ 2018-04-19 10:15:40 Solving the linear equations... 
+ 2018-04-19 10:15:40 ok. 
+
+ 2018-04-19 10:15:41 *** All done. *** 
+
+
