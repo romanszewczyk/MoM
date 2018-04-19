@@ -34,8 +34,8 @@
 %
 
 
-t=ver;
-if strcmp(t(1).Name,'Octave')==1
+t_ver=ver;
+if strcmp(t_ver(1).Name,'Octave')==1
    page_screen_output(0);
    page_output_immediately(1);
 end                 % if Octave, than configure screen for Octave
@@ -69,10 +69,10 @@ for k=1:N       % loop of equations
                                   % calculate a coefficient
     if k==i
        a(i,k)=a(i,k)+1;           % add 1 for Mk in its equation
-    endif
+    end
     
-  endfor        % end of the elements's loop
-endfor          % end of the equation's loop
+  end        % end of the elements's loop
+end         % end of the equation's loop
 
 M=a \ Hext;     % solve set of linear equations
 
@@ -86,9 +86,21 @@ B2=ones(size(x_g)).*Hext0.*mi0;
 
 Bi=interp1(x_t,B,x_g,'nearest','extrap');
 
-plot(x_t,B,'or','linewidth',2,x_g,Bi,'r','linewidth',2,x_g,B1,'k','linewidth',2,x_g,B2,'k','linewidth',2);
-set(gca, 'fontsize', 12);
-xlabel('x (m)','fontweight', 'bold');
-ylabel('B(T)','fontweight', 'bold');
-grid;
+if strcmp(t_ver(1).Name,'Octave')==1
+  % version for Octave
+  plot(x_t,B,'or','linewidth',2,x_g,Bi,'r','linewidth',2,x_g,B1,'k','linewidth',2,x_g,B2,'k','linewidth',2);
+  set(gca, 'fontsize', 12);
+  xlabel('x (m)','fontweight', 'bold');
+  ylabel('B (T)','fontweight', 'bold');
+  grid;
+else
+  % version for MATLAB
+  plot(x_t,B,'or',x_g,Bi,'r',x_g,B1,'k',x_g,B2,'k);
+  xlabel('x (m)');
+  ylabel('B (T)');
+  grid;
+end
+
+
+
 
