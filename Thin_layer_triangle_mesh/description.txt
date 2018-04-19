@@ -1,3 +1,5 @@
 
 Script for conversion of triangle mesh to uniform square mesh.
 
+Triangle mesh is in ELMER FEM format
+
