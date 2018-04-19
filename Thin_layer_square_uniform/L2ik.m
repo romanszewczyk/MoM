@@ -30,7 +30,8 @@ function [ix,iy,kx,ky]=L2ik(Lx,Ly,N)
 %
 % RELATED PUBLICATION(S):
 % R. Szewczyk "Magnetostatic modelling of thin layers using the method of moments 
-%              and its implementation in Octave/Matlab".
+%              and its implementation in Octave/Matlab", Springer, 2018. 
+%              DOI 10.1007/978-3-319-77985-0, ISBN 978-3-319-77984-3
 %
 %
    
