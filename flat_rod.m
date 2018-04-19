@@ -33,8 +33,8 @@
 %              DOI 10.1007/978-3-319-77985-0, ISBN 978-3-319-77984-3
 %
 
-t=ver;
-if strcmp(t(1).Name,'Octave')==1
+t_ver=ver;
+if strcmp(t_ver(1).Name,'Octave')==1
    page_screen_output(0);
    page_output_immediately(1);
 end % if Octave, than configure screen for Octave
@@ -86,9 +86,18 @@ B2=ones(size(x_g)).*Hext0.*mi0;       % interpolation of results
 
 Bi=interp1(x_t,Bt,x_g,'nearest','extrap');
 
-plot(x_t,Bt,'ok','linewidth',1,'markersize', 7, x_g,Bi,'r','linewidth',2,x_g,B1,'k','linewidth',2,x_g,B2,'k','linewidth',2);
-set(gca, 'fontsize', 12);
-xlabel('x (m)','fontweight', 'bold');
-ylabel('B(T)','fontweight', 'bold');
-grid;
+if strcmp(t_ver(1).Name,'Octave')==1
+  % version for Octave
+  plot(x_t,Bt,'ok','linewidth',1,'markersize', 7, x_g,Bi,'r','linewidth',2,x_g,B1,'k','linewidth',2,x_g,B2,'k','linewidth',2);
+  set(gca, 'fontsize', 12);
+  xlabel('x (m)','fontweight', 'bold');
+  ylabel('B (T)','fontweight', 'bold');
+  grid;
+else
+  % version for MATLAB
+  plot(x_t,Bt,'ok',x_g,Bi,'r',x_g,B1,'k',x_g,B2,'k');
+  xlabel('x (m)','fontweight', 'bold');
+  ylabel('B (T)','fontweight', 'bold');
+  grid;
+end
 
