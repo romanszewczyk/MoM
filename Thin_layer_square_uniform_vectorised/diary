@@ -1,0 +1,27 @@
+
+
+
+ 2018-04-19 09:20:57 *************************
+ 2018-04-19 09:20:57 *** MoM 2D vectorized ***
+ 2018-04-19 09:20:57 *************************
+
+ 2018-04-19 09:20:57 Initialization... N= 25 , mi= 1000, g= 0.000001 ok.
+ 2018-04-19 09:20:57 Generation of permeability matrix. Number of points = 625 ...
+ 2018-04-19 09:20:57 Done.
+ 2018-04-19 09:20:57 Generation of matrixes for linear equations and external magnetizing field. 
+                     Number of points to generate: 1562500 ...
+                     C matrixes loaded
+                     C matrixes ok.
+ 2018-04-19 09:20:57 Done.
+ 2018-04-19 09:20:57 Calculate mi matrix....
+ 2018-04-19 09:20:57 Done.
+ 2018-04-19 09:20:57 Calculate aM matrix...
+ 2018-04-19 09:20:59 Done.
+ 2018-04-19 09:20:59 Calculate aH matrix...
+ 2018-04-19 09:20:59 Done.
+ 2018-04-19 09:20:59 Solving the linear equations... 
+ 2018-04-19 09:21:00 Done. 
+
+ 2018-04-19 09:21:00 *** All done. *** 
+
+
