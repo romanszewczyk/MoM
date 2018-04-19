@@ -69,7 +69,7 @@ xlabel('x (mm)');
 ylabel('y(mm)');
 h=colorbar;
 
-figure (5,'Position');
+figure (5);
 contourf(xx,yy,By(:,:,1));
 xlabel('x (mm)');
 ylabel('y(mm)');
