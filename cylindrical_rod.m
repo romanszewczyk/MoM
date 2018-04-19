@@ -72,8 +72,8 @@ for k=1:N       % loop of equations
      if k==i
        a(i,k)=a(i,k)+1;     % add 1 for Mk in its equation
     end
-  endfor        % end of the elements's loop
-endfor          % end of the equation's loop
+  end        % end of the elements's loop
+end          % end of the equation's loop
 
 M=a \ Hext;     % solve set of linear equations
 
@@ -98,8 +98,8 @@ for k=1:N       % loop of equations
     if k==i
        a(i,k)=a(i,k)+1;   % add 1 for Mk in its equation
     end
-  endfor        % end of the elements's loop
-endfor          % end of the equation's loop
+  end        % end of the elements's loop
+end         % end of the equation's loop
 
 M=a \ Hext;     % solve set of linear equations
 
