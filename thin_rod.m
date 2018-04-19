@@ -95,7 +95,7 @@ if strcmp(t_ver(1).Name,'Octave')==1
   grid;
 else
   % version for MATLAB
-  plot(x_t,B,'or',x_g,Bi,'r',x_g,B1,'k',x_g,B2,'k);
+  plot(x_t,B,'or',x_g,Bi,'r',x_g,B1,'k',x_g,B2,'k');
   xlabel('x (m)');
   ylabel('B (T)');
   grid;
