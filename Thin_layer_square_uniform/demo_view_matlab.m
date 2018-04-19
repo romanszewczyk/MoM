@@ -64,7 +64,6 @@ h=colorbar;
 
 figure (4);
 contourf(xx,yy,Bx(:,:,1));
-
 xlabel('x (mm)');
 ylabel('y (mm)');
 h=colorbar;
