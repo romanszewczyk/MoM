@@ -1,0 +1,2 @@
+Software for the paper:
+Roman Szewczyk "Shape optimization of the race-track core for fluxgate sensor" (under review process)
